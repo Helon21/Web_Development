@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #1657ad;
+}
+
+body{
+    background-color: #e4e4e4a8;
+}
+
+label{
+    font-size: medium;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.column-div{
+    margin: auto;
+    text-align: center;
+}
