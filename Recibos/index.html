@@ -5,15 +5,18 @@
     </head>
     
     <body>
+        <img scr="https://cdn3.vectorstock.com/i/1000x1000/65/32/paper-cash-sell-receipt-vector-23876532.jpg" alt="receipt">
         <div class="column-div">
-            <h1> Service Provision Receipt </h1>
             <div class="form">
-                <div class="container">
+                <div class="serviceReceipt">
                     <div class="boxUp"> 
+                        <h2> Service Provision Receipt </h2>
                         <label> Value: </label>
                         <input placeholder="Enter the Value" type="number" id="value" />
+                        <label> Receipt Number (Optional): </label>
+                        <input placeholder="Enter the receipt number (optional)" type="number" id="receiptNumber"> 
                         <label> Client: </label>
-                        <input placeholder="Name of Client" type="text" id="cliente" />
+                        <input placeholder="Name of Client" type="text" id="client" />
                         <label> CPF ou CNPJ (Optional): </label>
                         <input placeholder="CPF ou CNPJ (optional)" type="text" id="cpf/cnpj" />
                         <label> Regarding whom: </label>
@@ -23,8 +26,70 @@
                         <label> Data: </label>
                         <input placeholder="Date" type="date" id="date" />
                     </div>
-                    <div class="boxDown">
-                        <label>  </label>
+                </div>
+                <div class="providerInformation">
+                    <div class="boxUp">
+                        <h2> Service Provider Information</h2>
+                        <label> Provider name:</label>
+                        <input placeholder="Enter name" type="text" id="providerName" />
+                        <label> Address: </label>
+                        <input placeholder="Enter adress" type="text" id="adress"/>
+                        <label> Number: </label>
+                        <input placeholder="Enter house number" type="number" id="houseNumber"/> 
+                        <label> District: </label>
+                        <input placeholder="District name" type="text" id="districtName">
+                        <label> City: </label>
+                        <input placeholder="Enter city" type="text" id="cityName"/>
+                        <label> Select the State: </label>
+                        <select id="state">
+                            <option> Select your State: </option>
+                            <option> Acre (AC) </option>
+                            <option> Alagoas (AL) </option>
+                            <option> Amapá (AP) </option>
+                            <option> Amazonas (AM) </option>    
+                            <option> Bahia (BA) </option>    
+                            <option> Ceará (CE) </option> 
+                            <option> Distrito Federal (DF) </option>
+                            <option> Espírito Santo (ES) </option>
+                            <option> Goiás (GO) </option>
+                            <option> Maranhão (MA) </option>
+                            <option> Mato Grosso (MT) </option>
+                            <option> Mato Grosso do Sul (MS) </option>
+                            <option> Minas Gerais (MG) </option>
+                            <option> Pará (PA) </option>
+                            <option> Paraíba (PB) </option>
+                            <option> Paraná (PR) </option>
+                            <option> Pernambuco (PE) </option>
+                            <option> Piauí (PI) </option>
+                            <option> Rio de Janeiro (RJ) </option>
+                            <option> Rio Grande do Norte (RN) </option>
+                            <option> Rio Grande do Sul (RS) </option>
+                            <option> Rondônia (RO) </option>
+                            <option> Roraima (RR) </option>
+                            <option> Santa Catarina (SC) </option>
+                            <option> São Paulo (SP) </option>
+                            <option> Sergipe (SE) </option>
+                        </select>
+                        <label> CEP: </label>
+                        <input placeholder="Enter CEP" type="number" id="cep"/>
+                        <label> Phone(optional): </label>
+                        <input placeholder="Phone is Optional" type="text" id="phone"/>
+                        <label> CPF or CNPJ(optional): </label>
+                        <input placeholder="CPF or CNPJ optional" type="text" id="cpf/cnpjProvider" />
+                        <div class="payment">
+                            <label> form of payment: </label>
+                            <input type="checkbox" id="moneyPayment" name="money" value="Money" />
+                            <label for="moneyPayment"> Money </label>
+                            <input type="checkbox" id="pix" name="pix" value="Pix" />
+                            <label for="pix"> Pix </label>
+                            <input type="checkbox" id="check" name="check" value="Check" />
+                            <label for="check"> Check </label>
+                            <input type="checkbox" id="transfer/deposit" name="transfer/desposit" value="Transfer/Deposit" />
+                            <label for="tranfer/deposit"> Transfer/Deposit </label>
+                            <input type="checkbox" id="creditCard/debitCard" name="creditCard/debitCard" value="Card" />
+                            <label for="creditCard/debitCard"> Credit Card / Debit </label>
+                        </div>
+                        <button class="generate" onclick="generateReceipt()"> Gerar Recibo </button>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
-h1{
+h2{
     text-align: center;
-    margin-top: 50px;
-    font-size: 50px;
+    margin-top: 20px;
+    font-size: 30px;
     font-family: sans-serif;
     font-style: normal;
     color: #1657ad;
@@ -17,8 +17,8 @@ label{
     font-weight: bold;
     font-family: monospace;
     display: block;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .column-div{
     margin: auto;
@@ -26,7 +26,7 @@ label{
 }
 .form{
     box-sizing: border-box;
-    width: 500px;
+    width: 700px;
     margin: 100px auto;
     border: 1px solid #dfdfdf;
     padding: 10px;
@@ -34,11 +34,47 @@ label{
     box-shadow: 0px 0px 5px #000000;
     background-color: #eceaea;
 }
-.container{
+.serviceReceipt{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.providerInformation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.payment{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    gap: 5px;
+}
+.copies{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.generate{
+    background-color: #1657ad;
+    border: none; 
+    color: white; 
+    padding: 15px 32px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 30px; 
+}
+
 .boxUp{
     width: 45%;
 }

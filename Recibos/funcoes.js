@@ -38,4 +38,10 @@ function validantingFields(){
     else{
         return true;
     }
+    
+}
+function generateReceipt(){
+   document.getElementsByClassName('serviceReceipt');
+   document.getElementsByClassName('providerInformation');
+   window.print();
 }
