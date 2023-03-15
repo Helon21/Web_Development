@@ -1,0 +1,23 @@
+label{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: larger;
+    font-style: normal;
+    color: #1c6ce4;
+}
+
+.botao{
+    border: none;
+    text-align: center;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background-color: rgb(223, 39, 70);
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(247, 247, 247);
+}
+input[type="text"]{
+    font-size: medium;
+}
